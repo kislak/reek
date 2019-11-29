@@ -9,6 +9,8 @@ bundler_args: --without debugging
 
 before_script:
   - env
+  - cat /home/travis/.rvm/rubies/jruby-9.1/bin/jruby
+
 script: bundle exec rake ci
 
 rvm:
